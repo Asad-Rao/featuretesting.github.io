@@ -66,7 +66,7 @@ flex-wrap: wrap;
 
 }
 
-  @media only screen and (min-width:200px) and (max-width:980px) {
+  @media only screen and (min-width:200px) and (max-width:729px) {
     .rowfeature {
       flex-wrap: wrap;
       width: 250px;
@@ -85,14 +85,14 @@ flex-wrap: wrap;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         font-family: Poppins-SemiBold;
-        font-size: 8px;
+        font-size: 2vh;
     }
     .buynow {
-        font-size: 8px;
+        font-size: 2vh;
         color: white;
         font-family:Poppins-SemiBold;
         background-color: black;
-        padding: 2% 3%;
+        padding: 3% 7%;
         margin-block-start: 2%;
     
     }
