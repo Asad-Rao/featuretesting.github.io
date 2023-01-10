@@ -85,14 +85,14 @@ flex-wrap: wrap;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         font-family: Poppins-SemiBold;
-        font-size: 2vh;
+        font-size: 8px;
     }
     .buynow {
-        font-size: 2vh;
+        font-size: 8px;
         color: white;
         font-family:Poppins-SemiBold;
         background-color: black;
-        padding: 3% 7%;
+        padding: 2% 3%;
         margin-block-start: 2%;
     
     }
