@@ -183,7 +183,7 @@ width: 100%;
   .column1{
    
     width: 100%;
-
+text-align: center;
 
   }
   .column2{
@@ -191,6 +191,10 @@ width: 100%;
     width: 100%;
 
 
+  }
+  .child
+  {
+    scale: 50% 50%;
   }
 
 }
