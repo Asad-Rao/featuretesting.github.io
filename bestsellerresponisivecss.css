@@ -475,21 +475,23 @@ height: 500px;
 .aboutoutletswelcome {
 font-size: 18px;
 font-family: Poppins-SemiBold;
-}
-.outletstext
-{
-  font-size: 15px;
-  font-family: Poppins-Light;
-}
-.aboutoutletstext {
-  word-spacing: 10px;
-  /* line-height: 25px; */
-  text-align: justify;
-  padding-block: 1rem; ;
+
 }
 .col-text
 {
-  padding: 4rem;
+  font-size: 15px;
+  font-family: Poppins-Light;
+
+}
+.aboutoutletstext {
+  word-spacing: 5px;
+  /* line-height: 25px; */
+  /* text-align: justify; */
+  padding-block: 1rem ;
+}
+.outlettextcontainer
+{
+  margin: 4rem;
 }
 
 .VIEWMORE
