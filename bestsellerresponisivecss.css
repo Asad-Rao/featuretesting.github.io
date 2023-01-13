@@ -210,7 +210,7 @@ text-align: center;
     width: 100%;
     flex-wrap: wrap;
 justify-content: center;
-    gap:3.3%;
+    gap:3.33%;
     
   }
   
@@ -295,7 +295,7 @@ justify-content: center;
   border: 1px solid black;
 
 flex-wrap: wrap;  
-gap: 3%;
+gap: 4.505%;
 }
 
 .col-4 {
@@ -350,10 +350,10 @@ gap: 3%;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
       font-family: Poppins-SemiBold;
-      font-size: 2vh;
+      /* font-size: 2vh; */
   }
   .buynow {
-      font-size: 2vh;
+      /* font-size: 2vh; */
       color: white;
       font-family:Poppins-SemiBold;
       background-color: black;
