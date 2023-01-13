@@ -209,8 +209,8 @@ text-align: center;
     /* justify-content: space-between; */
     width: 100%;
     flex-wrap: wrap;
-
-    gap:2.4%;
+justify-content: center;
+    gap:3.3%;
     
   }
   
@@ -218,7 +218,7 @@ text-align: center;
 
     width: 22.5%;
     border: 1px solid black;
-    margin-block-end: 2%;
+  
 
     
 
@@ -251,49 +251,17 @@ text-align: center;
   Smallest modile Device consider be 200px
   Largest mobile device consider be 767px */
   /* 600-800px Tablet */
-  @media only screen and (min-width:600px) and (max-width:800px) {
-    .col-3 {
-  
-      width: 48.5%;
-      border: 1px solid black;
-      
-
-    }
-
-    .details {
-      width: auto;
-    }
-  
-    .seller-text {
-      white-space: wrap;
-  
-      font-size: 4vh;
-      font-family: Poppins, sans-serif;
-  
-    }
-  
-    .sales {
-      font-size: 4vh;
-      display: inline-block;
-      font-family: Poppins, sans-serif;
-    }
-  
-  
-    .price {
-      font-size: 4vh;
-      font-family: Poppins-SemiBold;
-  
-    }
-  }
+ 
 
 
   
-  @media only screen and (min-width:320px) and (max-width:599px) {
+  @media only screen and (min-width:320px) and (max-width:767px) {
     .col-3 {
   
       width:100%;
       border: 1px solid black;
       /* height: 275px; */
+      text-align: center;
     }
   
     .details {
@@ -304,13 +272,13 @@ text-align: center;
     .seller-text {
       white-space: wrap;
   
-      font-size: 2vh;
+      /* font-size: 2vh; */
       font-family: 'Poppins', sans-serif;
   
     }
   
     .sales {
-      font-size: 2vh;
+      /* font-size: 2vh; */
       display: inline-block;
       font-family: 'Poppins', sans-serif;
     }
@@ -369,46 +337,8 @@ gap: 3%;
 
 }
 
-@media only screen and (min-width:600px) and (max-width:800px) {
-  .rowfeature{
-    justify-content: center;
-    display: flex;
-  }
 
-  .col-4 {
-    width: 48%;
-    border: 1px solid black;
-    margin-block: 20px;
-
-  }
-  .card-text {
-      text-align: center;
-      text-transform: uppercase;
-      color: rgb(255, 255, 255);
-      font-family: Poppins-SemiBold;
-      font-size: 2vh;
-  }
-  .buynow {
-      font-size: 2vh;
-      color: white;
-      font-family:Poppins-SemiBold;
-      background-color: black;
-      padding: 3% 7%;
-      margin-block-start: 2%;
-  
-  }
-  .text-button {
-      width: 100%;
-      text-align: center;
-      white-space: nowrap;
-      position: absolute;
-      bottom: 3px;
-      /* left: 83.4765;
-      right: 83.4765px; */
-  }
-
-}
-@media only screen and (min-width:320px) and (max-width:599px) {
+@media only screen and (min-width:320px) and (max-width:767px) {
 
   .col-4 {
     width: 100%;
@@ -529,9 +459,43 @@ max-height: 100%;
   flex-direction: row;
   background-color: black;
   justify-content: space-around;
-
+color: white;
+font-family: 'Poppins', sans-serif;
 }
 .footercolumn
 {
   width:10% ;
+}
+/*********************************************************/
+input {
+  size: "25";
+
+}
+.subscribe {
+  font-size: 15px;
+  font-family: "Poppins-SemiBold";
+
+}
+.anchor-footer {
+  text-decoration-line: none;
+  color: rgb(255, 255, 255);
+}
+
+.footermainul {
+  font-size: 17px;
+
+
+}
+
+::placeholder {
+  font-size: 13px;
+  font-family: "Poppins-Light";
+  margin-inline-start: 20px;
+}
+
+/********************************************************/
+
+@media screen and (max-width:767px) 
+{
+
 }
