@@ -75,6 +75,7 @@ color: black;
 nav
 {
 position:relative;
+justify-content: normal;
 }
 .logo{
   margin: 0 auto;
