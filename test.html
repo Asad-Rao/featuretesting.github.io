@@ -11,25 +11,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="pagewidth">
         <nav>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              
             <div class="logo">
-              <img src="images/logo.png" alt="Logo">
+                <img src="images/logo.png" alt="Logo">
             </div>
-            <ul class="nav-items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+
+            <ul class="nav-items" id="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <div class="icons">
-              <img src="images/user.png" alt="Icon 1">
-              <img src="images/cart.png" alt="Icon 2">
-              <img src="images/magnify.png" alt="Icon 3">
+                <img src="images/user.png" alt="Icon 1">
+                <img src="images/cart.png" alt="Icon 2">
+                <img src="images/magnify.png" alt="Icon 3">
             </div>
-          </nav>
+        </nav>
         <!--****************************************************-->
         <div class="rowtopsection">
             <div class="column1">
@@ -143,9 +151,10 @@
                     <p class="price">$10.99 USD</p>
                 </div>
             </div>
+            <button class="featurebutton">VIEW MORE</button>
         </div>
         <div class="headingcontainer">
-            <h1 class="heading">Best Seller</h1>
+            <h1 class="heading">FEATURED PRODUCTS</h1>
         </div>
         <div class="rowfeature">
             <div class="col-4">
@@ -174,7 +183,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="pagewidth">
             <div class="headingcontainer">
                 <h1 class="heading">About Outlets</h1>
@@ -194,14 +203,15 @@
                             way and a cheap way.</p>
                         <p class="aboutoutletstext ">Because what is better than cheap products? Great quality cheap
                             products</p>
-                            
-                                <button style="margin-block: 1rem;" class="VIEWMORE">READ MORE</button>
-                            
+
+                        <button style="margin-block: 1rem;" class="VIEWMORE">READ MORE</button>
+
                     </div>
-                   
+
                 </div>
+
             </div>
-            <button>VIEW MORE</button>
+
         </div>
         <div class="footer-grid">
             <div class="footercolumn">
@@ -251,7 +261,13 @@
         </div>
     </div>
 
-
+    <script>
+ 
+        function myFunction(x) {
+            x.classList.toggle("change");
+            document.getElementById("nav-items").classList.toggle("show");
+          }
+      </script>
 </body>
 
 </html>
