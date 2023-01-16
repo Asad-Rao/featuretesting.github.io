@@ -480,20 +480,26 @@ max-height: 100%;
 }
 /****************************************************/
 .footer-grid
-{width: 100%;
+{
   display: flex;
   flex-direction: row;
   background-color: black;
-  justify-content: space-around;
+  justify-content: center;
+column-gap: 8%;
 color: white;
 font-family: 'Poppins', sans-serif;
 flex-wrap: wrap;
 }
-.footercolumn
-{
-  width:10% ;
-}
+
 /*********************************************************/
+.footercolum1{width: 20%}
+
+.footercolum2{width: 25%;}
+
+.footercolum3{width: 10%;}
+
+.footercolum4{width: 10%}
+
 input {
   size: "25";
 
@@ -550,6 +556,7 @@ form
   font-size: 15px;
   color: rgb(199, 199, 199);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: black;
 }
@@ -563,5 +570,16 @@ form
   {
     width:100% ;
     text-align: center;
+    margin: 2% 0;
+  }
+  .copyright,copyimage
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .bottom
+  {
+justify-content: center;
+
   }
 }
