@@ -14,72 +14,34 @@ body
 
 }
 /*****************************NAV BAR CSS****************/
-.nav
-{
-    background-color:rgb(242 242 242);
-    /* Specifying 10vh is equivalent to
-    occupying 10% of entire visible screen height. */
-    min-height: 40vh;
-    height: 0rem;
-    overflow: hidden;
-}
-
-/* .nav-menu is selected */
-.nav .nav-menu{
+nav {
   display: flex;
-    /*property defines how the browser
-     distributes space between and around content
-      items along the main-axis of a flex container, 
-      and the inline axis of a grid container.*/
-    justify-content: space-between;
-    flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav .nav-brand a{
-    display: block;
-    font-size: 1.6rem;
-    padding: 1rem 0;
-}
-.nav .nav-items
-{
 
-/* Dotted type of list is removed of li of ul */
-    list-style-type: none;
-    /* moving the li of ul in same line */
-    display: flex;
-    /*   */
-    margin: 0;
-}
-.nav .nav-items .nav-links
-{
-    padding: 1.6rem 1rem;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
+.nav-items {
+  display: flex;
+  list-style: none;
 
 }
 
-.nav .nav-items .nav-links a
-{
-    text-decoration: none;
-}
-.flex-row
-{
-    display: flex;
-    /* flex items are displayed in a row
-    direction text is laid out in a line */
-    /* All the items in a div of class flex and flex-direction
-    are displayed in same line  */
-    flex-direction: row;
-}
-.social a
-{
-    text-decoration: none;
-}
-.nav .social
-{
-    padding: 1.4rem;
+.nav-items li {
+  margin: 0 10px;
+  font-size: 17px;
+  
+  font-family: 'Poppins', sans-serif;
 }
 
+.nav-items li a {
+text-decoration: none;
+color: black;    
+
+}
+
+@media screen {
+  
+}
 
 
 @media screen and (max-width:767px) {
@@ -476,9 +438,14 @@ input {
   font-family: "Poppins-SemiBold";
 
 }
+.ulfooter
+{
+  list-style: none;
+}
 .anchor-footer {
   text-decoration-line: none;
   color: rgb(255, 255, 255);
+
 }
 
 .footermainul {
