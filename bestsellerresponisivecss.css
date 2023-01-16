@@ -86,6 +86,7 @@ justify-content: normal;
 position: absolute;
 right: 0;
 top: 0;
+margin: 6px 0;
   }
   .nav-items
   {
@@ -99,7 +100,9 @@ top: 0;
   .container
   {
     display: block;
-    float: left;
+position: absolute;
+top: 0;
+left: 0;
 
   }
   .show
