@@ -93,7 +93,6 @@ margin: 6px 0;
     display: none;
     text-align: left;
     float: left;
-
     width: 100%;
     line-height: 2;
   }
@@ -148,8 +147,6 @@ flex-wrap: wrap;
   font-family: Poppins-Light;
   width:50%;
   padding-block: 6rem;
-
-
 }
 
 .shopoutlets {
@@ -302,8 +299,8 @@ justify-content: center;
     }
 
     .details {
-      width: auto;
-
+      width: 100%;
+line-height: 2;
     }
 
     .seller-text {
