@@ -156,9 +156,10 @@ flex-wrap: wrap;
   font-size: 15px;
   /* mag */
   font-family: Poppins-Light;
+  margin:2% 0;
 
 }
-
+.texts
 .quality {
   font-size: 30px;
 }
@@ -176,10 +177,9 @@ flex-wrap: wrap;
 
 }
 
-/* .textspacing {
-  margin-block: 1rem;
-
-} */
+.textspacing {
+  margin-block: 2%;
+}
 
 .collection {
   font-size: 15px;
