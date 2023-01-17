@@ -17,6 +17,7 @@ body
 {
   background-image: url("images/darkshade.png"),url("images/behinddarks.png");
   background-repeat: no-repeat;
+
 }
 /*****************************NAV BAR CSS****************/
 nav {
@@ -30,11 +31,15 @@ nav {
 .hamburger-menu
 {
   display: none;
-
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
 
 
 }
-
 .nav-items {
   display: flex;
   list-style: none;
@@ -81,7 +86,8 @@ color: black;
 nav
 {
 position:relative;
-justify-content: normal;
+display: flex;
+align-items: center;
 height: auto;
 }
 .logo{
@@ -92,7 +98,7 @@ height: auto;
   {
 position: absolute;
 right: 0;
-top: 0;
+top: 35px;
 margin: 6px 0;
   }
   .nav-items
@@ -107,7 +113,7 @@ margin: 6px 0;
   {
     display: block;
 position: absolute;
-top: 0;
+top: 35px;
 left: 0;
 
   }
@@ -582,7 +588,9 @@ form
   color: rgb(199, 199, 199);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 44.6%;
+  align-items: center;
  
 }
 
