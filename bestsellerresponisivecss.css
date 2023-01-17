@@ -17,8 +17,6 @@ body
 {
   background-image: url("images/darkshade.png"),url("images/behinddarks.png");
   background-repeat: no-repeat;
-
-
 }
 /*****************************NAV BAR CSS****************/
 nav {
@@ -495,6 +493,15 @@ max-height: 100%;
 }
 }
 /****************************************************/
+.footer
+{
+  
+background-color: black;
+padding-block-start: 4%;
+padding-block-end: 1%;
+  
+
+}
 .footer-grid
 {
   display: flex;
@@ -529,11 +536,13 @@ input {
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
   color: rgb(255, 255, 255);
+  line-height:2.7;
 }
 
 .ulfooter
 {
   list-style: none;
+  line-height: 1.7;
 }
 .anchor-footer {
   text-decoration-line: none;
@@ -574,7 +583,7 @@ form
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: black;
+ 
 }
 
 /********************************************************/
