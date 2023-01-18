@@ -10,23 +10,33 @@ body
 
     margin: 0;
     padding: 0;
+    max-width: auto;
+    margin: 0 auto;
+
 
 }
-.topbackgrounimage
+.section1top
 {
-  background-image: url("images/darkshade.png"),url("images/behinddarks.png");
-  background-repeat: no-repeat;
-
+  max-width:1300px ;
+  min-height: 100px;
+  margin:auto 10%;
 }
+
 /*****************************NAV BAR CSS****************/
+.logo
+{
+  scale: 100% 96%
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 150px;
+
 
 }
+.iconsimages {
+scale: 75% 75%;}
 .hamburger-menu
 {
   display: none;
@@ -48,7 +58,7 @@ nav {
 
 .nav-items li {
   margin: 0 10px;
-  font-size: 17px;
+  font-size: 13px;
 
   font-family: 'Poppins', sans-serif;
 }
@@ -125,27 +135,24 @@ left: 0;
 
 }
 /*********************************************************/
-.pagewidth
-{
-    max-width: 1400px;
-    margin: auto;
-}
+
 #mosttopsection
 {
-  max-width: 1300px;
-  margin: auto ;
+  background-image: url("images/darkshade.png"),url("images/topbackground.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat no-repeat;
 }
-.headingcontainer
-{ width: 100%;
-}
+
 .heading {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
   font-family: Poppins-SemiBold;
   color: black;
+  letter-spacing: 1.2px;
+  width: 100%;
 }
 /**********************************AFTER NAVIGATION******************/
 .rowtopsection {
@@ -160,42 +167,44 @@ margin: 2% auto;
 .column1  {
   font-family: Poppins-Light;
   width:50%;
-  padding-block: 6rem;
+  margin: auto 0;
 }
 
 .shopoutlets {
-  font-size: 15px;
+  font-size: 13px;
   /* mag */
   font-family: Poppins-Light;
-  margin:2% 0;
+  margin:3.5% 0;
 
 }
-.texts
+
 .quality {
-  font-size: 30px;
+  font-size: 27px;
+font-weight: 100;
+  font-family: Poppins-Light;
 }
 
 
 
 .cheapproducts {
-  font-size: 60px ;
+  font-size: 45px ;
   font-family: Poppins-ExtraBold;
   line-height: 0.98;
 }
 
 .cheapandeasy {
-  font-size: 15px;;
+  font-size: 13px;;
 
 }
 
 .textspacing {
-  margin-block: 2%;
+margin: 3.5% 0;
 }
 
 .collection {
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Poppins-Light";
-  padding: 2% 5%;
+  padding: 2.5% 4%;
   color: rgb(255, 255, 255);
   background-color: rgb(255, 0, 0);
 
@@ -209,7 +218,7 @@ margin: 2% auto;
 
 /**********************Image Stacking*******************/
 .column2 {
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
 }
 
@@ -266,24 +275,33 @@ text-align: center;
   }
 
   .imagesbestseller {
-    width: 100%;
+width: 100%;
+    object-fit: cover;
+    height: 182px;
   }
 
   .seller-text {
 
-    font-size: 15px;
+    font-size: 11px;
     font-family: 'Poppins', sans-serif;
   }
 
   .sales {
-    font-size: 13px;
+    font-size: 9.5px;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
   }
 
-
+.details
+{
+text-align: left;
+padding-block-start: 8%;
+}
+.stars
+{width: 22%;
+}
   .price {
-    font-size: 17px;
+    font-size: 14px;
     font-family: Poppins-SemiBold;
 
   }
@@ -293,19 +311,27 @@ text-align: center;
   Largest mobile device consider be 767px */
   /* 600-800px Tablet */
 
-.featurebutton
+.READMORE
 {
-  font-size: 15px;
+  font-size: 12px;
   color: rgb(0, 0, 0);
   font-family:Poppins-Light;
   background-color: rgb(255, 255, 255);
-  padding: 1% 3%;
-  margin: 0 auto;
+  padding: 13px 27.297px;
+  border-width: 2px;
+display: block;
 
 }
+#featuresection
+{
+  margin: 4% auto;
+}
+#bestsellersection
+{  margin: 4% auto;
 
-
+}
   @media only screen and (min-width:320px) and (max-width:767px) {
+    
     .col-3 {
 
       width:100%;
@@ -313,10 +339,19 @@ text-align: center;
       /* height: 275px; */
       text-align: center;
     }
-
+    .imagesbestseller {
+      width: 100%;
+          object-fit: cover;
+ height: auto;
+        }
+      
     .details {
       width: 100%;
-      line-height: 2;
+      text-align: center;
+    }
+    .stars
+    {
+      width: 14%;
     }
 
     .seller-text {
@@ -361,29 +396,35 @@ gap: 4.505%;
   text-align: center;
   white-space: nowrap;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   /* left: 83.4765;
   right: 83.4765px; */
 }
 .featureimage {
   width: 100%;
+object-fit: cover;
+height: 100%;
+  display: block;
 }
 .card-text {
   text-align: center;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-family: Poppins-SemiBold;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 
 .buynow {
-  font-size: 15px;
+  font-size: 13px;
   color: white;
   font-family:Poppins-SemiBold;
   background-color: black;
-  padding: 3% 7%;
+  padding: 1.7% 9.5%;
   margin-block-start: 2%;
+  outline-style: none;
+  border-width: 1px;
 
 }
 
@@ -412,23 +453,35 @@ gap: 4.505%;
 
   }
   .text-button {
-      width: 100%;
-      text-align: center;
-      white-space: nowrap;
-      position: absolute;
-      bottom: 3px;
-      /* left: 83.4765;
-      right: 83.4765px; */
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 15px;
+    /* left: 83.4765;
+    right: 83.4765px; */
   }
-
-
+  .featureimage {
+scale: 1 1;
+    display: block;
+  }
 
 }
 /******************************************************/
+
+.pagewidth
+{
+  max-width: 1700px;
+  margin: auto ;
+}
+
 #aboutoutletssection
 {
-  max-width: 1300px;
-  margin: auto ;
+  background-image:url("images/AboutOutletsBackground.png");
+  background-repeat: no-repeat no-repeat;
+  background-size: 100% 100%;
+  padding-block: 4%;
+
 }
 .aboutoutletsrow
 {
@@ -439,64 +492,62 @@ gap: 4.505%;
   margin: 2% auto;
   border: 1px solid black;
 flex-wrap: wrap;  
-margin: 2% auto;
+
 
 }
 
-.col-6
+.rightoutlets
 {
 width: 50%;
-max-height: 447.906px;
-
 }
+
 .outletsimage
 {
 
-  width: 100%;
-  max-height: 100%;
-  min-height: 100%;
+object-fit: cover;
+width: 100%;
+height: 346.297px;
   display: block;
+  max-height: auto;
 
- 
 }
 
 .aboutoutletswelcome {
-font-size: 18px;
+font-size: 15px;
 font-family: Poppins-SemiBold;
 
 }
 .col-text
 {
+  width: 50%;
   font-size: 15px;
   font-family: Poppins-Light;
   text-align: left;
+  padding: 3rem;
+  background-color: white;
 
 }
 .aboutoutletstext {
-  word-spacing: 5px;
-  /* line-height: 25px; */
-  /* text-align: justify; */
-  padding-block: 1rem ;
+font-size: 12px;
+line-height: 1.8;
+margin-block:3%;
 }
-.outlettextcontainer
-{
-padding-block: 4rem;
-padding-inline: 3.5rem;
-word-spacing: 3px;
-}
+
 
 .VIEWMORE
 {
-  font-size: 15px;
+  font-size: 12px;
   color: rgb(0, 0, 0);
-  font-family:Poppins-SemiBold;
+  font-family:Poppins-Light;
   background-color: rgb(255, 255, 255);
-  padding: 3% 7%;
+  padding: 1% 2.1%;
+display: block;
+margin: 0 auto;
 }
 
 @media screen and (max-width:767px) 
 {
-  .col-6
+  .rightoutlets
 {
 
   width: 100%;
@@ -514,48 +565,44 @@ max-height: 100%;
 }
 }
 /****************************************************/
-.footer
-{
-  
-background-color: black;
 
-  
-
-}
 .footer-grid
 {
   display: flex;
   flex-direction: row;
-  background-color: black;
-  justify-content: center;
-column-gap: 8%;
+  justify-content: space-around;
 color: white;
 font-family: 'Poppins', sans-serif;
 flex-wrap: wrap;
-padding-block-start: 3%;
-padding-block-end: 3%;
 }
 
 /*********************************************************/
-.footercolum1{width: 20%}
+.footerlogo{
+scale: 100% 96%
+}
+.footercolum1{width: fit-content;
+padding-block:6%;}
 
-.footercolum2{width: 25%;}
+.footercolum2{width:fit-content;}
 
-.footercolum3{width: 10%;}
+.footercolum3{width: fit-content;}
 
-.footercolum4{width: 10%}
+.footercolum4{width: fit-content}
 
 input {
   size: "25";
+  text-align: left;
+  font-size: 7px;
+
 
 }
 .subscribe {
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Poppins-SemiBold";
 }
 .main-ul
 {
-  font-size: 17px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   color: rgb(255, 255, 255);
   line-height:2.7;
@@ -585,8 +632,8 @@ input {
 }
 input[type=text] {
 
-  padding: 11px 0px;
-
+  padding: 9px 0px;
+border-radius: 0;
   box-sizing: border-box;
 }
 form
@@ -596,20 +643,28 @@ form
 .lifooter
 {
   font-family: "Poppins-Light";
+  font-size: 13px;
 }
 .bottom
 {
   font-family: "Poppins-Light";
-  font-size: 15px;
+  font-size: 13px;
   color: rgb(199, 199, 199);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 44.6%;
   align-items: center;
- padding-block: 1%;
-}
+  justify-content: space-between;
 
+}
+.copyimage
+{
+  width: fit-content;
+  scale: 70% 70%;
+}
+.copyright
+{
+  width: fit-content;
+}
 /********************************************************/
 
 @media screen and (max-width:767px) 
@@ -631,4 +686,10 @@ form
 justify-content: center;
 
   }
+}
+#footersection
+{
+  background-image:url("images/footerbackground.png") ;
+  background-repeat: no-repeat no-repeat;
+  background-size: 100% 100%;
 }
