@@ -168,6 +168,7 @@ margin: 2% auto;
   font-family: Poppins-Light;
   width:50%;
   margin: auto 0;
+
 }
 
 .shopoutlets {
@@ -581,7 +582,9 @@ flex-wrap: wrap;
 scale: 100% 96%
 }
 .footercolum1{width: fit-content;
-padding-block:6%;}
+display: flex;
+align-items: center;
+}
 
 .footercolum2{width:fit-content;}
 
@@ -674,7 +677,7 @@ form
   {
     width:100% ;
     text-align: center;
-    margin: 2% 0;
+    justify-content: center;
   }
   .copyright,copyimage
   {
